@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'navigate' do
   before do
-    @user = User.create(email: "gaga@gaga.com", password: "123456", password_confirmation: "123456", first_name: "Gaga", last_name: "Gaga")
+    @user = User.create(email: "gaga@gaga.com", password: "123456", password_confirmation: "123456", first_name: "gaga", last_name: "gaga")
     login_as(@user, :scope => :user)
   end
 
@@ -53,4 +53,3 @@ describe 'navigate' do
     end
   end
 end
-

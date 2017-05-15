@@ -4,27 +4,37 @@
 <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:100px;height:100px;"src="http://www.clocklink.com/html5embed.php?clock=005&timezone=MST&color=red&size=100&Title=&Message=&Target=&From=2017,1,1,0,0,0&Color=red"></iframe>
 
 </div>
-<ul class="custom-nav nav nav-tabs">
-	<li class="<%= active?(root_path) %>">
-		<%= link_to "Home", root_path %>
-	</li>
-	<li class="<%= active?(posts_path) %>">
-		<%= link_to "Time Clock Entries", posts_path %>
-	</li>
-	 <li class="<%= active?(new_post_path) %>">
-    <%= link_to "Add New Entry", new_post_path, id: 'new_post_from_nav' %>
-  </li>
-	<li class="dropdown pull-right">
-		 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Account<strong class="caret"></strong></a>
-		<ul class="dropdown-menu">
-			<li>
-				<%= link_to "TODO: Admin Dashboard", root_path %>
-			</li>
-			<li class="divider">
-			</li>
-			<li>
-				<%= link_to "Logout", destroy_user_session_path, method: :delete %>
-			</li>
-		</ul>
-	</li>
-</ul>
+
+<!-- TODO -->
+<% if current_user %>
+       <ul class="custom-nav nav nav-tabs">
+	          <li class="<%= active?(root_path) %>">
+		             <%= link_to "Home", root_path %>
+	          </li>
+	          <li class="<%= active?(posts_path) %>">
+		             <%= link_to "Time Clock Entries", posts_path %>
+	          </li>
+	          <li class="<%= active?(new_post_path) %>">
+                     <%= link_to "Add New Entry", new_post_path, id: 'new_post_from_nav' %>
+              </li>
+	          <li class="dropdown pull-right">
+		             <a href="#" data-toggle="dropdown" class="dropdown-toggle">Account<strong class="caret"></strong></a>
+		           <ul class="dropdown-menu">
+			
+				    <!-- TODO -->
+				<% if current_user.try(:type) == 'AdminUser' %>
+				<li>
+					<%= link_to "Admin Dashboard", admin_root_path %>
+				</li>
+				<li class="divider"></li>
+				<% end %>
+				<!-- TODO -->
+
+				<li>
+					<%= link_to "Logout", destroy_user_session_path, method: :delete %>
+				</li>
+			</ul>
+		</li>
+	</ul>
+<% end %>
+<!-- TODO -->

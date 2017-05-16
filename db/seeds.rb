@@ -1,8 +1,8 @@
 @user = User.create(email: "test@test.com",
 										password: "123456",
 										password_confirmation: "123456",
-										first_name: "gaga",
-										last_name: "gaga",
+										first_name: "Jon",
+										last_name: "Snow",
 										phone: "18015984177")
 
 puts "1 User created"

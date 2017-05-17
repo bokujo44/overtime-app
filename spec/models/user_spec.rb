@@ -33,7 +33,7 @@ RSpec.describe User, type: :model do
     end
 
     xit 'requires the phone attr to only have 10 chars' do
-      @user.phone = '12345678901'
+      @user.phone = '18015984177'
       expect(@user).to_not be_valid
     end
   end

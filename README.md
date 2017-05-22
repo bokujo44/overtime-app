@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Key requirement: company needs documentation that salaried employees did or did not get overtime each week
 
-Things you may want to cover:
+Models
 
-* Ruby version
+x Post -> date:date rationale:text
+x User -> Devise
+x AdminUser -> STI
+AuditLog
+Features:
 
-* System dependencies
+Approval Workflow
+SMS Sending -> link to approval or overtime input
+x Administrate admin dashboard
+x Block non admin and guest users
+Email summary to managers for approval
+Needs to be documented if employee did not log overtime
+UI:
 
-* Configuration
+x Bootstrap -> formatting
+x Icons from glyphicons
+x Update the styles for forms
+TODOS:
 
-* Database creation
+Integrate validation for phone attr in User:
+No spaces or dashes
 
-* Database initialization
+all characters have to be a number
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+exactly 10 characters

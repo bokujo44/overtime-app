@@ -33,14 +33,14 @@ RSpec.describe User, type: :model do
     end
 
     xit 'requires the phone attr to only have 10 chars' do
-      @user.phone = '18015984177'
+      @user.phone = '3852357280'
       expect(@user).to_not be_valid
     end
   end
 
   describe "custom name methods" do
     xit 'has a full name method that combines first and last name' do
-      expect(@user.full_name).to eq("GAGA, GAGA")
+      expect(@user.full_name).to eq("gaga, gaga")
     end
   end
 end

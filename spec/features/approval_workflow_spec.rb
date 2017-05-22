@@ -26,7 +26,7 @@ describe 'navigate' do
 
       visit edit_post_path(@post)
 
-      expect(page).to_not have_content('Approved')
+      expect(page).to_not have_content('approved')
     end
 
     xit 'should not be editable by the post creator if status is approved' do

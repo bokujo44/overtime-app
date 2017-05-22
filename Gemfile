@@ -24,6 +24,7 @@ group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'factory_girl_rails', '~> 4.8'
+  gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 end
 
 group :development do
@@ -42,7 +43,6 @@ end
   gem 'bourbon', '~> 4.3', '>= 4.3.4'
   gem 'pundit', '~> 1.1'
   gem 'twilio-ruby', '~> 4.13'
-  gem 'dotenv-rails' , :groups => [:development, :test]
 
   
   

@@ -44,6 +44,7 @@ end
   gem 'pundit', '~> 1.1'
   gem 'twilio-ruby', '~> 4.13'
   gem 'kaminari', '~> 1.0', '>= 1.0.1'
+  gem 'bootstrap-kaminari-views'
 
   
   

@@ -3,23 +3,10 @@
 @import "posts.scss";
 @import "gritter";
 @import "bourbon";
+@import "admin_homepage.scss";
 
 .custom-nav {
-        margin-top: 15px;
+  margin-top: 16px;
 }
 
-html body {
-    background-image: url("StockSnap_GDMT7216H0.jpg");
-}
-
-.jumbotron{
-    background-color: E6E0E0;
-
-}
-
-.label-pill {
-  padding-right: .6em;
-  padding-left: .6em;
-  border-radius: 8rem;
-}
 

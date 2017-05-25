@@ -1,15 +1,5 @@
-<div class="jumbotron">
-	
-	<h2>
-		Gosh darn it Hudgens!
-	</h2>
-	<p>
-		 here.
-	</p>
-
-	hi
-	    <div>
-	<p>
-		<a class="label label-pill label-primary href="#">Learn more</a>
-	</p>
-</div>
+<% if admin_types.include?(current_user.try(:type)) %>
+  <%= render 'admin' %>
+<% else %>
+  <%= render 'employee' %>
+<% end %>

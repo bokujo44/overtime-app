@@ -45,6 +45,7 @@ end
   gem 'twilio-ruby', '~> 4.13'
   gem 'kaminari'
   gem 'bootstrap-kaminari-views'
+  gem 'rails_12factor'
 
   
   

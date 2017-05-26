@@ -18,6 +18,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 
+
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails', '~> 3.0'
@@ -46,6 +47,8 @@ end
   gem 'kaminari'
   gem 'bootstrap-kaminari-views'
   gem 'rails_12factor'
+  gem 'newrelic_rpm', '~> 4.2', '>= 4.2.0.334'
+
 
   
   
